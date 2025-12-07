@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Ocultar checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Icono hamburguesa */
+.toggle-btn {
+    font-size: 1.8rem;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+}
+
+.toggle-btn::before {
+    content: "☰";
+}
+
+/* Icono cerrar */
+.menu-toggle:checked + .toggle-btn::before {
+    content: "✖";
+}
+
+/* Menú móvil oculto */
+.menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #444;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+/* Mostrar menú cuando está chequeado */
+.menu-toggle:checked + .toggle-btn + .menu {
+    display: flex;
+}
+
+/* ------- VISTA TABLET Y DESKTOP ------- */
+@media (min-width: 768px) {
+    /* Ocultar hamburguesa */
+    .toggle-btn {
+        display: none;
+    }
+
+    /* Menú horizontal */
+    .menu {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+
+    .menu a {
+        border: none;
+        padding: 0 1rem;
+    }
+
+    .brand {
+        margin-right: auto;
+    }
+
+    .menu {
+        margin: 0 auto;
+    }
+}
