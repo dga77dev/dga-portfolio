@@ -1,10 +1,13 @@
-export default function Apartado({ titulo, children }) {
+export default function Apartado({ titulo, descripcion }) {
     return (
         <section>
-            <div className="apartado">
+            <div className="apartado" id={titulo.toLowerCase().replace(/\s+/g, "-")}>
             <h2>{titulo}</h2>
                 <div>
-                    {children}
+                    <p dangerouslySetInnerHTML={{ __html: descripcion }}></p>
+{/*
+                    {descripcion}
+*/}
                 </div>
             </div>
         </section>
