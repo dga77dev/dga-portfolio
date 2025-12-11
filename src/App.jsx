@@ -13,6 +13,8 @@ import Header from './components/Header.jsx';
 import NavBar from './components/NavBar.jsx';
 import ScrollTopButton from './components/ScrollToplButton.jsx';
 import Apartado from './components/Apartado.jsx';
+import Accordion from './components/Accordion.jsx';
+import ApartadoAcordeones from './components/ApartadoAcordeones.jsx';
 
 export default function App() {
 
@@ -25,7 +27,18 @@ export default function App() {
   const miTfno = "656270671";
   const sobremi = "<p><b>Apasionado de la informática, la programación y el desarrollo</b> desde una edad temprana. Disfruto creando soluciones funcionales y <b>aportando un enfoque innovador y diferente en cada proyecto</b>.<br/>Me motiva aprender de forma continua —tanto mediante formación reglada como de manera autodidacta— y aplicar esos conocimientos en retos reales.</br> Me considero una persona <b>responsable, colaborativa y resolutiva, con vocación por compartir lo aprendido y ayudar a los demás</b> intentando siempre mejorar, aportar valor y seguir creciendo profesionalmente dentro del ámbito del desarrollo, la tecnología y la docencia.</p>";
   const objetivo = "Mi objetivo es seguir creciendo como profesional del desarrollo, contribuir en proyectos que supongan un reto y mantener siempre una actitud abierta, curiosa y orientada a la mejora constante.";
-  const capacidades = [
+  const capacidades1 = [
+    "Desarrollo web fullstack",
+    "Gestión de bases de datos relacionales",
+    "Control de versiones",
+    "Posicionamiento, SEO, SEM, analítica",
+    "Levantar entorno local y remoto",
+    "Administración, gestión de plataformas Moodle",
+    "Elaboración de contenido formativo",
+    "Gestión scorm",
+    "Seguimiento a alumnado online"
+  ];
+    const capacidades2 = [
     "Desarrollo web fullstack",
     "Gestión de bases de datos relacionales",
     "Control de versiones",
@@ -37,12 +50,45 @@ export default function App() {
     "Seguimiento a alumnado online"
   ];
 
-  /* minúsculas. Es para cargar logotipos */ 
+  /* minúsculas. Es para cargar logotipos */
   const habilidades = [
     "html", "css", "bootstrap", "javascript", "react", "node", "express", "sql", "php",
     "wordpress", "woocommerce", "moodle", "gsc", "analitics", "ads", "powerbi", "powerapps",
     "office"
   ]
+
+  const formación = [
+    {
+      anio: 2026,
+      titulo: "Desarrollador Full Stack Jr con Javascript",
+      centro: "Core NetWork"
+    },
+
+    {
+      anio: 2025,
+      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grado ABC",
+      centro: "Enterprise Formación"
+    },
+    
+    {
+      anio: 2024,
+      titulo: "Certificado de Profesionalidad IFCD0210 - Desarrollo de Aplicaciones con Tecnología Web",
+      centro: "MainJob"
+    },    
+    
+    {
+      anio: 1997,
+      titulo: "Técnico Especialista en Informática de Gestión",
+      centro: "IES Al Baytar"
+    },
+    
+    {
+      anio: 1995,
+      titulo: "Técnico Auxiliar Administrativo",
+      centro: "IES Al Baytar"
+    }
+  ]
+
 
   return (
     <div className="app">
@@ -55,8 +101,12 @@ export default function App() {
 
         <Apartado titulo="Sobre mí" descripcion={sobremi} />
 
-        <Apartado titulo="Capacidades" descripcion={capacidades} />
-        {/*}
+        <ApartadoAcordeones titulo="Capacidades" capacidades1 = {capacidades1}  capacidades2={capacidades2} />
+
+    
+ {/*}
+
+        <Apartado titulo="Habilidades" descripcion={habilidades} />
         <Apartado titulo="Capacidades" descripcion={capacidades} />
         <Apartado titulo="Habilidades" descripcion={habilidades} />
         <Apartado titulo="Proyectos" descripcion={proyetos} />
