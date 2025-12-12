@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 export default function NavBar({ linkedin, github }) {
     return (
         <nav className="navbar">
-            <div className="brand">Portfolio David G.A</div>
+            <div className="brand">Portfolio & C.V</div>
 
             {/* Checkbox controlador del menú */}
             <input type="checkbox" id="menu-toggle" className="menu-toggle" />
             <label htmlFor="menu-toggle" className="toggle-btn"></label>
 
             <ul className="menu">
-                <li><HashLink smooth to="#sobre-mi">Sobre mí</HashLink></li>
+                <li><HashLink smooth to="#sobre-mí">Sobre mí</HashLink></li>
                 <li><HashLink smooth to="#capacidades">Capacidades</HashLink></li>
                 <li><HashLink smooth to="#habilidades">Habilidades</HashLink></li>
                 <li><HashLink smooth to="#proyectos">Proyectos</HashLink></li>

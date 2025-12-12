@@ -8,8 +8,8 @@ export default function Header({ job, miMail, miTfno }) {
             <div className="division1">
                 <Avatar />
                 <div>
-                <h2>David Godoy Ávila</h2><br />
-                <h3>{job}</h3>
+                    <h2>David Godoy Ávila</h2><br />
+                    <h3>💻{job}</h3>
                 </div>
             </div>
             <div className="division2">

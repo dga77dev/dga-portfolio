@@ -50,44 +50,67 @@ export default function App() {
     "Seguimiento a alumnado online"
   ];
 
-  /* minúsculas. Es para cargar logotipos */
-  const habilidades = [
-    "html", "css", "bootstrap", "javascript", "react", "node", "express", "sql", "php",
-    "wordpress", "woocommerce", "moodle", "gsc", "analitics", "ads", "powerbi", "powerapps",
-    "office"
-  ]
+  const capacidades3 = [
+    "Posicionamiento orgánico SEO",
+    "Posicionamiento pago SEM en Google Ads",
+    "Gestión de Google Search Console",
+    "Gestión de Google Analytics",
+    "Creación de contenido digital"
+  ];
+
+  const habilidades = ["html", "css", "bootstrap", "javascript", "react", "node", "express", "sql", "php", "wordpress", "PowerApss", "moodle"];
 
   const formación = [
     {
-      anio: 2026,
-      titulo: "Desarrollador Full Stack Jr con Javascript",
-      centro: "Core NetWork"
+      anio: 1997,
+      titulo: "FP2 - Técnico Especialista en Informática de Gestión",
+      centro: "IES AlBaytar (Benalmádena)",
+      descripFormacion: "Metodología de la programación, MSDos, Basic, Clipper, Cobol, Pascal, Ficheros, Dbase III..."
     },
 
     {
-      anio: 2025,
-      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grado ABC",
-      centro: "Enterprise Formación"
+      anio: 2006,
+      titulo: "Diseño Web y Multimedia",
+      centro: "Ingenia (PTA)",
+      descripFormacion: "HTML, CSS, Javascript, Flash"
     },
+    
+    {
+      anio: 2006,
+      titulo: "Técnico en Sistemas Microinformáticos",
+      centro: "Autesel (PTA)",
+      descripFormacion: "Montaje y reparación de equipos de sobremesa, Instalación de S.O. Windows y Linux, Redes y soldadura SMD."
+    },    
     
     {
       anio: 2024,
       titulo: "Certificado de Profesionalidad IFCD0210 - Desarrollo de Aplicaciones con Tecnología Web",
-      centro: "MainJob"
-    },    
-    
-    {
-      anio: 1997,
-      titulo: "Técnico Especialista en Informática de Gestión",
-      centro: "IES Al Baytar"
+      centro: "Mainjobs (Málaga)",
+      descripFormacion: "590h."
     },
     
     {
-      anio: 1995,
-      titulo: "Técnico Auxiliar Administrativo",
-      centro: "IES Al Baytar"
+      anio: 2025,
+      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grado ABC",
+      centro: "Enterprise Formación (Málaga)",
+      descripFormacion: "xxxh."
+    },
+
+    {
+      anio: 2026,
+      titulo: "IFCD0022 Fullstack developer jr con Javascript-FULLSTACK JÚNIOR WEB DEVELOPER CON JAVASCRIPT",
+      centro: "Enterprise Formación (Málaga)",
+      descripFormacion: "260h. Html, CSS, JS, Bases de datos SQL, React, Node, Express, Apis, PostMan"
     }
-  ]
+  ];
+
+  const trayectoria = [
+    {fecha: 1988, lugar: "Mi primer Ordenador", descripcion: "Inicio en programación en un Amstrad CPC464 64k en Basic"},
+    {fecha: 1988, lugar: "Academia Cristina", descripcion: "Primeras clases de programación, 386 y 486. Basic y S.O. MSDos"},
+    {fecha: 1990, lugar: "Segundo Ordenador", descripcion: "Creación de pequeños juegos en Amiga 500plus"},
+    {fecha: 1992, lugar: "IES Al Baytar", descripcion: "Metodología de la programación, Basic, Bases de datos DBaseIII, MSDos, Arquitectura de sistemas"},
+    {fecha: 1995, lugar: "IES Al Baytar", descripcion: "Clipper, Cobol, Pascal, DBaseIV, QBasic"}
+  ];
 
 
   return (
@@ -101,42 +124,17 @@ export default function App() {
 
         <Apartado titulo="Sobre mí" descripcion={sobremi} />
 
-        <ApartadoAcordeones titulo="Capacidades" capacidades1 = {capacidades1}  capacidades2={capacidades2} />
-
-    
- {/*}
+        <ApartadoAcordeones titulo="Capacidades" capacidades1 = {capacidades1}  capacidades2={capacidades2} capacidades3={capacidades3} />
 
         <Apartado titulo="Habilidades" descripcion={habilidades} />
-        <Apartado titulo="Capacidades" descripcion={capacidades} />
-        <Apartado titulo="Habilidades" descripcion={habilidades} />
-        <Apartado titulo="Proyectos" descripcion={proyetos} />
-        <Apartado titulo="Formación" descripcion={formacion} />
-
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <div id="proyectos">
-          <p>asfasdkfjñalksdfjñlaksdfjñlkdsfjñ
-
-          </p>
-        </div>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-        <p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p><p>parrafo</p>
-          */}
         <p>“Un título te define un día; las ganas te definen toda la vida.”</p>
         <p>“Tu valor no disminuye por alguien que no sabe verlo.”</p>
 
       </main>
 
-
       <ScrollTopButton />
+
+      {/* Pte poner un mini footer. con frase celebre */}
     </div>
   );
 

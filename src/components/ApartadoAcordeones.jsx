@@ -1,5 +1,5 @@
 import Accordion from './Accordion.jsx';
-export default function ApartadoAcordeones({ titulo, capacidades1, capacidades2 }) {
+export default function ApartadoAcordeones({ titulo, capacidades1, capacidades2, capacidades3 }) {
     return (
         <section>
             <div className="apartado" id={titulo.toLowerCase().replace(/\s+/g, "-")}>
@@ -7,7 +7,7 @@ export default function ApartadoAcordeones({ titulo, capacidades1, capacidades2 
                 <div>
                     <Accordion title="Desarrollo Web y programación" children={capacidades1} />
                     <Accordion title="Docencia" children={capacidades2} />
-                    <Accordion title="Marketing Digital"/>
+                    <Accordion title="Marketing Digital" children={capacidades3} />
                 </div>
             </div>
         </section>
