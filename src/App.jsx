@@ -91,7 +91,7 @@ export default function App() {
 
     {
       anio: 2025,
-      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grados A, B y C",
+      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grados A, B y",
       centro: "Enterprise Formación (Málaga)",
       descripFormacion: "xxxh."
     },
