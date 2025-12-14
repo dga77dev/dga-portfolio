@@ -1,4 +1,6 @@
-export default function Apartado({ titulo, descripcion }) {
+import Accordion from './Accordion.jsx';
+
+export default function Apartado({ titulo, descripcion, cursos }) {
 
     if (titulo === "Formación") {
         return (
@@ -15,6 +17,17 @@ export default function Apartado({ titulo, descripcion }) {
                             <p>{item.descripFormacion}</p>
                         </div>
                     ))}
+
+                    <Accordion title="+ Cursos y certificaciones" >
+                        {cursos.map((item, index) => (
+                        <div key={index} className="formacionItem container">
+                            <h3 className="formacionTitulo">{item.titulo}</h3>
+                            <p><strong>{item.anio}</strong> - {item.centro}</p>
+                            <p>{item.descripFormacion}</p>
+                        </div>
+                        ))}
+                    </Accordion>
+                    
                 </div>
             </section>
         );

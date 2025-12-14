@@ -20,7 +20,7 @@ export default function App() {
 
   // Variables
 
-  const job = "Full Stack Developer Jr. || Docente FPE Informática";
+  const job = "Full Stack Developer Jr. | Docente en Informática";
   const urllinkedin = "https://www.linkedin.com/in/dga77dev";
   const urlgithub = "https://github.com/dga77dev";
   const miMail = "dga77dev@gmail.com";
@@ -38,7 +38,7 @@ export default function App() {
     "Gestión scorm",
     "Seguimiento a alumnado online"
   ];
-    const capacidades2 = [
+  const capacidades2 = [
     "Desarrollo web fullstack",
     "Gestión de bases de datos relacionales",
     "Control de versiones",
@@ -74,24 +74,24 @@ export default function App() {
       centro: "Ingenia (PTA)",
       descripFormacion: "HTML, CSS, Javascript, Flash"
     },
-    
+
     {
       anio: 2006,
       titulo: "Técnico en Sistemas Microinformáticos",
       centro: "Autesel (PTA)",
       descripFormacion: "Montaje y reparación de equipos de sobremesa, Instalación de S.O. Windows y Linux, Redes y soldadura SMD."
-    },    
-    
+    },
+
     {
       anio: 2024,
       titulo: "Certificado de Profesionalidad IFCD0210 - Desarrollo de Aplicaciones con Tecnología Web",
       centro: "Mainjobs (Málaga)",
       descripFormacion: "590h."
     },
-    
+
     {
       anio: 2025,
-      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grado ABC",
+      titulo: "Certificado de Profesionalidad SSCE0110 - Habilitación para la docencia FPE Grados A, B y C",
       centro: "Enterprise Formación (Málaga)",
       descripFormacion: "xxxh."
     },
@@ -104,12 +104,34 @@ export default function App() {
     }
   ];
 
+  const cursos = [
+    {
+      anio: 2026,
+      titulo: "IFCD0022 Fullstack developer jr con Javascript",
+      centro: "Core Networks (Málaga)",
+      descripFormacion: "260h. Html, CSS, JS, Bases de datos, SQL, React, Node, Express, Apis, PostMan, Wordpress"
+    },
+    {
+      anio: 2026,
+      titulo: "",
+      centro: "",
+      descripFormacion: ""
+    },
+    {
+      anio: 2026,
+      titulo: "",
+      centro: "",
+      descripFormacion: ""
+    }
+
+  ];
+
   const trayectoria = [
-    {fecha: 1988, lugar: "Mi primer Ordenador", descripcion: "Inicio en programación en un Amstrad CPC464 64k en Basic"},
-    {fecha: 1988, lugar: "Academia Cristina", descripcion: "Primeras clases de programación, 386 y 486. Basic y S.O. MSDos"},
-    {fecha: 1990, lugar: "Segundo Ordenador", descripcion: "Creación de pequeños juegos en Amiga 500plus"},
-    {fecha: 1992, lugar: "IES Al Baytar", descripcion: "Metodología de la programación, Basic, Bases de datos DBaseIII, MSDos, Arquitectura de sistemas"},
-    {fecha: 1995, lugar: "IES Al Baytar", descripcion: "Clipper, Cobol, Pascal, DBaseIV, QBasic"}
+    { fecha: 1988, lugar: "Mi primer Ordenador", descripcion: "Inicio en programación en un Amstrad CPC464 64k en Basic" },
+    { fecha: 1988, lugar: "Academia Cristina", descripcion: "Primeras clases de programación, 386 y 486. Basic y S.O. MSDos" },
+    { fecha: 1990, lugar: "Segundo Ordenador", descripcion: "Creación de pequeños juegos en Amiga 500plus" },
+    { fecha: 1992, lugar: "IES Al Baytar", descripcion: "Metodología de la programación, Basic, Bases de datos DBaseIII, MSDos, Arquitectura de sistemas" },
+    { fecha: 1995, lugar: "IES Al Baytar", descripcion: "Clipper, Cobol, Pascal, DBaseIV, QBasic" }
   ];
 
 
@@ -125,11 +147,11 @@ export default function App() {
 
         <Apartado titulo="Sobre mí" descripcion={sobremi} />
 
-        <ApartadoAcordeones titulo="Capacidades" capacidades1 = {capacidades1}  capacidades2={capacidades2} capacidades3={capacidades3} />
+        <ApartadoAcordeones titulo="Capacidades" capacidades1={capacidades1} capacidades2={capacidades2} capacidades3={capacidades3} />
 
         <Apartado titulo="Habilidades" descripcion={habilidades} />
 
-        <Apartado titulo="Formación" descripcion={formacion} />
+        <Apartado titulo="Formación" descripcion={formacion} cursos={cursos} />
 
         <p>“Un título te define un día; las ganas te definen toda la vida.”</p>
         <p>“Tu valor no disminuye por alguien que no sabe verlo.”</p>

@@ -16,8 +16,8 @@ export default function NavBar({ linkedin, github }) {
                 <li><HashLink smooth to="#sobre-mí">Sobre mí</HashLink></li>
                 <li><HashLink smooth to="#capacidades">Capacidades</HashLink></li>
                 <li><HashLink smooth to="#habilidades">Habilidades</HashLink></li>
-                <li><HashLink smooth to="#proyectos">Proyectos</HashLink></li>
                 <li><HashLink smooth to="#formación">Formación</HashLink></li>
+                <li><HashLink smooth to="#proyectos">Proyectos</HashLink></li>
                 <li><Link to={github} target="_blank"><i className="bi bi-github"></i> Github</Link></li>
                 <li><Link to={linkedin} target="_blank"><i className="bi bi-linkedin"></i> LinkedIn</Link></li>
             </ul>
