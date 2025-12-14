@@ -60,7 +60,7 @@ export default function App() {
 
   const habilidades = ["html", "css", "bootstrap", "javascript", "react", "node", "express", "sql", "php", "wordpress", "PowerApss", "moodle"];
 
-  const formación = [
+  const formacion = [
     {
       anio: 1997,
       titulo: "FP2 - Técnico Especialista en Informática de Gestión",
@@ -98,9 +98,9 @@ export default function App() {
 
     {
       anio: 2026,
-      titulo: "IFCD0022 Fullstack developer jr con Javascript-FULLSTACK JÚNIOR WEB DEVELOPER CON JAVASCRIPT",
-      centro: "Enterprise Formación (Málaga)",
-      descripFormacion: "260h. Html, CSS, JS, Bases de datos SQL, React, Node, Express, Apis, PostMan"
+      titulo: "IFCD0022 Fullstack developer jr con Javascript",
+      centro: "Core Networks (Málaga)",
+      descripFormacion: "260h. Html, CSS, JS, Bases de datos, SQL, React, Node, Express, Apis, PostMan, Wordpress"
     }
   ];
 
@@ -111,6 +111,7 @@ export default function App() {
     {fecha: 1992, lugar: "IES Al Baytar", descripcion: "Metodología de la programación, Basic, Bases de datos DBaseIII, MSDos, Arquitectura de sistemas"},
     {fecha: 1995, lugar: "IES Al Baytar", descripcion: "Clipper, Cobol, Pascal, DBaseIV, QBasic"}
   ];
+
 
 
   return (
@@ -127,6 +128,9 @@ export default function App() {
         <ApartadoAcordeones titulo="Capacidades" capacidades1 = {capacidades1}  capacidades2={capacidades2} capacidades3={capacidades3} />
 
         <Apartado titulo="Habilidades" descripcion={habilidades} />
+
+        <Apartado titulo="Formación" descripcion={formacion} />
+
         <p>“Un título te define un día; las ganas te definen toda la vida.”</p>
         <p>“Tu valor no disminuye por alguien que no sabe verlo.”</p>
 

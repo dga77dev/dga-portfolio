@@ -183,8 +183,19 @@
       margin-bottom: 1.2rem;
     }
 
+    .formacionTitulo {
+      color: var(--color-cabecera);
+      color: white;
+    }
+
+    .formacionItem {
+      background-color: var(--color-cabeceraop);
+      padding: 1rem;
+      margin: 1rem 0rem;
+    }
 
   }
+
 
   /* Botón arriba */
 
@@ -239,7 +250,7 @@
 
   .cabecera {
     width: 100%;
-    color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     background: var(--color-cabeceraop);
