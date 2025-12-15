@@ -58,7 +58,7 @@ export default function App() {
     "Creación de contenido digital"
   ];
 
-  const habilidades = ["html", "css", "bootstrap", "javascript", "react", "node", "express", "sql", "php", "wordpress", "PowerApss", "moodle"];
+  const habilidades = ["html", "css", "javascript", "react", "node", "express", "mysql", "php", "bootstrap", "wordpress", "moodle", "powerapps"];
 
   const formacion = [
     {
