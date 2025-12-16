@@ -9,7 +9,7 @@ export default function Header({ job, miMail, miTfno }) {
                 <Avatar />
                 <div>
                     <h2>David Godoy Ávila</h2><br />
-                    <h3>💻{job}</h3>
+                    <h3>{job}</h3>
                 </div>
             </div>
             <div className="division2">
