@@ -34,35 +34,33 @@ export default function App() {
   const capacidades1 = [
     "Desarrollo web fullstack: Lenguajes: HTML, CSS, JS, React, PHP, Node, ExpressJS.",
     "Crear y consumir Apis en Node y uso de PostMan.",
-    "Gestión de bases de datos relacionales: MySQL, MariaDB",
-    "Control de versiones: Git, GitHub, GitHub Desktop.",
-    "Levantar entorno de trabajo en servidor local: Xampp, Wamp, Mamp, NodeJS. ",
+    "Gestión de bases de datos relacionales: MySQL, MariaDB.",
+    "Control de versiones: Git, GitHub, GitHub Desktop o en VSC.",
+    "Levantar entorno de trabajo en servidor local: Xampp, Wamp, Mamp, NodeJS.",
     "Administración y gestión en Wordpress.",
-    "Administración y gestión de plataformas Moodle",
-
+    "Administración y gestión de plataformas Moodle.",
+    "Uso de entornos Windows, Linux o Mac."
   ];
   const capacidades2 = [
-    "Planificar y diseño de clases",
-    "Administración, gestión de plataformas Moodle",
-    "Elaboración de contenido formativo",
-    "Creación y gestión scorm con Exelearning",
-    "Seguimiento a alumnado online"
+    "Planificar y diseño de clases.",
+    "Administración, gestión de plataformas Moodle.",
+    "Elaboración de contenido formativo.",
+    "Creación y gestión scorm con Exelearning.",
+    "Seguimiento a alumnado online."
   ];
 
   const capacidades3 = [
-    "Posicionamiento orgánico SEO",
-    "Posicionamiento pago SEM en Google Ads",
-    "Gestión de Google Search Console",
-    "Gestión de Google Analytics",
-    "Creación de contenido digital"
+    "Posicionamiento orgánico SEO.",
+    "Posicionamiento pago SEM en Google Ads.",
+    "Gestión de Google Search Console.",
+    "Gestión de Google Analytics.",
+    "Creación de contenido digital."
   ];
 
     const capacidades4 = [
     "Instalación y configuración de Sistemas Operativos Windows, Linux o Mac.",
     "Uso de terminal Dos.",
-    "Instalación y reparación de equipos de sobremesa.",
-    "Gestión de Google Analytics",
-    "Creación de contenido digital"
+    "Instalación y reparación de equipos de sobremesa."
   ];
 
   const habilidades = ["html", "css", "javascript", "react", "node", "express", "mysql", "php", "bootstrap", "wordpress", "moodle", "powerapps", "git", "github"];
@@ -188,35 +186,35 @@ export default function App() {
       anio: 2025,
       titulo: "Power Bi - Analista de datos avanzado ",
       centro: "Udemy",
-      descripFormacion: "pte."
+      descripFormacion: "Desarrollo completo de reporte, conexiones, modelo estrella, ajuste de columnas y condicioneales, condicionales con DAX, optimizar tablas Dim, funciones, medidias con DAX, interacciones y ajustes a slicers, formateando los reportes, marcadores."
     },    
     
     {
       anio: 2024,
       titulo: "SQL IBM Skillbuild. 40 horas",
       centro: "Datahack",
-      descripFormacion: "pte"
+      descripFormacion: "Fundamentos SQL, combinaciones de tablas, herraientas avanzadas."
     },    
 
     {
       anio: 2024,
       titulo: "Master en SQL Server: Desde cero a profesional",
       centro: "Udemy",
-      descripFormacion: "pte"
+      descripFormacion: "Instalación SQL Server Developer, SQL Server Management Studio, conexiones, fundamentos y estructura de bbdd, relaciones y restricciones entre tablas, DML, cláusulas SQl, funciones, operadores, procedimientos almacenados, variables y subconsultas, transacciones, vistas, triggers, backup y retores y tareas automatizadas."
     },
 
     {
       anio: 2024,
       titulo: "PHP",
       centro: "Superskill",
-      descripFormacion: ""
+      descripFormacion: "Programación en PHP básico."
     },
 
     {
       anio: 2024,
       titulo: "SEO Avanzado",
       centro: "Open Marketers",
-      descripFormacion: "pte"
+      descripFormacion: "Análisis de palabras claves, arquitectura de la información, SEO on Site, localidazado, movil y para videos, SEO off Page, auditoría y estrategia SEO, monitorización de resultados."
     },
 
     {
@@ -230,17 +228,8 @@ export default function App() {
       anio: 2023,
       titulo: "SEO Básico",
       centro: "Open Marketers",
-      descripFormacion: ""
-    },
-
-    {/*
-    {
-      anio: 202,
-      titulo: "",
-      centro: "",
-      descripFormacion: ""
-    },
-    */}
+      descripFormacion: "Bases para un posicionamiento eficaz, análisis de palabras clave y arquitectura, SEO on Page, SEO off Page."
+    }
   ];
 
   const trayectoria = [
