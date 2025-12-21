@@ -9,5 +9,4 @@ export default function Iconos({tec}) {
             {dato}
         </div>  
     )
-
 }

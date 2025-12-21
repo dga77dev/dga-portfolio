@@ -25,11 +25,12 @@ export default function App() {
     🎓 Docente en Informática
   </>
   );
+
   const urllinkedin = "https://www.linkedin.com/in/dga77dev";
   const urlgithub = "https://github.com/dga77dev";
   const miMail = "dga77dev@gmail.com";
   const miTfno = "656270671";
-  const sobremi = "<p><b>Apasionado de la informática, la programación y el desarrollo</b> desde una edad temprana. Disfruto creando soluciones funcionales y <b>aportando un enfoque innovador y diferente en cada proyecto</b>.<br/>Me motiva aprender de forma continua —tanto mediante formación reglada como de manera autodidacta— y aplicar esos conocimientos en retos reales.</br> Me considero una persona <b>responsable, colaborativa y resolutiva, con vocación por compartir lo aprendido y ayudar a los demás</b> intentando siempre mejorar, aportar valor y seguir creciendo profesionalmente dentro del ámbito del desarrollo, la tecnología y la docencia.</p>";
+  const sobremi= "<p><b>Apasionado de la informática, la programación y el desarrollo</b> desde una edad temprana. Disfruto creando soluciones funcionales, <b>aportando un enfoque innovador y diferente en cada proyecto</b>.<br/>Me motiva <b>aprender de forma continua</b>, tanto a través de formación reglada como de manera autodidacta, y la aplicación práctica de esos conocimientos en retos reales. Además, tengo gran <b>interés por el marketing digital</b>, especialmente en el <b>posicionamiento SEO y la analítica web</b>, áreas que estudio y desarrollo en proyectos.<br/>Me considero una <b>persona responsable, colaborativa y resolutiva, con vocación por compartir lo aprendido y ayudar a los demás</b>, buscando siempre mejorar, aportar valor y seguir creciendo dentro del ámbito del desarrollo, la tecnología y la docencia.</p>";
   const objetivo = "Mi objetivo es seguir creciendo como profesional del desarrollo, contribuir en proyectos que supongan un reto y mantener siempre una actitud abierta, curiosa y orientada a la mejora constante.";
   const capacidades1 = [
     "Desarrollo web fullstack: Lenguajes: HTML, CSS, JS, React, PHP, Node, ExpressJS.",
@@ -219,7 +220,7 @@ export default function App() {
 
     {
       anio: 2024,
-      titulo: "IFCT014PO Implementación del estándar SCORM 1.2 en plataformas virtuales de aprendizaje",
+      titulo: "IFCT014PO Implementación del  estándar SCORM 1.2 en plataformas virtuales de aprendizaje",
       centro: "CEINPRO",
       descripFormacion: "El modelo de contenido y empaquetado, el api y el modelo de datos, versiones, aplicaciones prácticas, contenidos didácticos, como se crea un contenido, prueba del contenido, entorno de ejecución, datos scorm de seguimiento y herramientas."
     },
@@ -240,7 +241,40 @@ export default function App() {
     { fecha: 1995, lugar: "IES Al Baytar", descripcion: "Clipper, Cobol, Pascal, DBaseIV, QBasic" }
   ];
 
+  const proyectos = [
+    { 
+      id: 1,
+      nombre: "redStudia", 
+      tecs: ["html", "css", "javascript", "php", "moodle", "mysql"], 
+      descripcion: "Plataforma de teleformación que comparte entorno propio y con entorno bajo Moodle para pequeños cursos. A la que en un futuro añadiremos un GPT para correguir exámenes y ejercicios.",
+      imagen: true,
+      video: false,
+      pagina: false,
+      enlace: "https://www.google.es"
+    } ,  
+    
+    { 
+      id: 2,
+      nombre: "walking malaga", 
+      tecs: ["html", "css", "javascript", "php", "mysql", "wordpress"], 
+      descripcion: "Web para dar a conocer Málaga y sus municipios de forma inmersiva. Además permite crear una lista de lugares para visitar.",
+      imagen: false,
+      video: false,
+      pagina: false,
+      enlace: false
+    },
 
+    { 
+      id: 3,
+      nombre: "CV Portfolio", 
+      tecs: ["html", "css", "react"], 
+      descripcion: "Este portafolio y curriculum web para mostrar mis habilidades y proyectos.",
+      imagen: false,
+      video: false,
+      pagina: false,
+      enlace: false
+    }
+  ];
 
   return (
     <div className="app">
@@ -255,12 +289,15 @@ export default function App() {
 
         <ApartadoAcordeones titulo="Capacidades" capacidades1={capacidades1} capacidades2={capacidades2} capacidades3={capacidades3} />
 
-        <Apartado titulo="Habilidades" descripcion={habilidades} />
+        <Apartado titulo="Habilidades Tecnológicas" descripcion={habilidades} />
 
         <Apartado titulo="Formación" descripcion={formacion} cursos={cursos} />
 
+        <Apartado titulo="Proyectos" descripcion={proyectos} />
+{/*
         <p>“Un título te define un día; las ganas te definen toda la vida.”</p>
         <p>“Tu valor no disminuye por alguien que no sabe verlo.”</p>
+*/}
 
       </main>
 

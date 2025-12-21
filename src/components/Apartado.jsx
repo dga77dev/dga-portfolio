@@ -1,7 +1,8 @@
 import Accordion from './Accordion.jsx';
 import Iconos from './Iconos.jsx';
+import Proyecto from './Proyecto.jsx';
 
-export default function Apartado({ titulo, descripcion, cursos}) {
+export default function Apartado({ titulo, descripcion, cursos }) {
     // export default function Apartado({ titulo, children }) {
 
     const renderContenido = () => {
@@ -9,18 +10,20 @@ export default function Apartado({ titulo, descripcion, cursos}) {
         // Contenido es texto (sobre mi)
         if (titulo === "Sobre mí") {
             return (
-                <p dangerouslySetInnerHTML={{ __html: descripcion }} />
+                <section>
+                    <p dangerouslySetInnerHTML={{ __html: descripcion }} />
+                </section>
             );
         }
 
         if (titulo === "Formación") {
             return (
-                <>
+                <section>
                     {descripcion.map((item, index) => (
                         <div key={index} className="formacionItem container">
                             <h3 className="formacionTitulo">{item.titulo}</h3>
                             <p><strong>{item.anio}</strong> - {item.centro}</p>
-                            <p>{item.descripFormacion}</p>
+                            <p>💠{item.descripFormacion}</p>
                         </div>
                     ))}
 
@@ -29,22 +32,38 @@ export default function Apartado({ titulo, descripcion, cursos}) {
                             <div key={index} className="formacionItem container">
                                 <h3 className="formacionTitulo">{item.titulo}</h3>
                                 <p><strong>{item.anio}</strong> - {item.centro}</p>
-                                <p>{item.descripFormacion}</p>
+                                <p>💠{item.descripFormacion}</p>
                             </div>
                         ))}
                     </Accordion>
-                </>
+                </section>
             );
         }
 
-        if (titulo === "Habilidades") {
-            return( 
-                <div className="contenedorIconos">
-                    {descripcion.map((tec, index) => (
-                        <Iconos key={index} tec={tec} />
-                    ))}
-                </div>
+        if (titulo === "Habilidades Tecnológicas") {
+            return (
+                <section>
+                    <div className="contenedorIconos">
+                        {descripcion.map((tec, index) => (
+                            <Iconos key={index} tec={tec} />
+                        ))}
+                    </div>
+                </section>
             )
+        }
+
+        if (titulo === "Proyectos") {
+            return (
+
+                <section>
+                    <div className = "contenedorProyectos">
+                        {descripcion.map((p) => (
+                            <Proyecto key={p.id} proyecto={p} />
+                        ))}
+                    </div>
+                </section>
+
+            );
         }
 
     };
