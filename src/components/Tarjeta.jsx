@@ -10,7 +10,7 @@ export function Tarjeta({miMail, miTfno}) {
                 <li><a href={`https://wa.me/${miTfno}?text=%C2%A1%C2%A1Hola%21%21%20he%20visto%20tu%20CV%20y%20quer%C3%ADa%20contactar%20contigo.`} target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-whatsapp"></i> {miTfno}
                 </a></li>
-                <li><a href="./src/assets/cv_david_godoy_avila.pdf" target="_blank" rel="noopener noreferrer"><i className="bi bi-file-earmark-person"></i> Descargar CV</a></li>
+                <li><a href="./data/cv_david_godoy_avila.pdf" target="_blank" rel="noopener noreferrer"><i className="bi bi-file-earmark-person"></i> Descargar CV</a></li>
             </ul>
         </div>
     )
