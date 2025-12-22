@@ -14,6 +14,7 @@ import NavBar from './components/NavBar.jsx';
 import ScrollTopButton from './components/ScrollToplButton.jsx';
 import Apartado from './components/Apartado.jsx';
 import ApartadoAcordeones from './components/ApartadoAcordeones.jsx';
+import Footer from './components/Footer.jsx';
 
 export default function App() {
 
@@ -241,6 +242,8 @@ export default function App() {
     { fecha: 1995, lugar: "IES Al Baytar", descripcion: "Clipper, Cobol, Pascal, DBaseIV, QBasic" }
   ];
 
+  // enlace hace referencia a url del sitio. página hace referencia a enlace interno a otra página
+  
   const proyectos = [
     { 
       id: 1,
@@ -250,7 +253,7 @@ export default function App() {
       imagen: true,
       video: false,
       pagina: false,
-      enlace: "https://www.google.es"
+      enlace: false 
     } ,  
     
     { 
@@ -276,6 +279,8 @@ export default function App() {
     }
   ];
 
+  const fraseFooter = "Desde los 12 enganchado a la tecla.";
+
   return (
     <div className="app">
       {/* <Header dark={dark} toggleTheme={toggleTheme} /> */}
@@ -294,12 +299,11 @@ export default function App() {
         <Apartado titulo="Formación" descripcion={formacion} cursos={cursos} />
 
         <Apartado titulo="Proyectos" descripcion={proyectos} />
-{/*
-        <p>“Un título te define un día; las ganas te definen toda la vida.”</p>
-        <p>“Tu valor no disminuye por alguien que no sabe verlo.”</p>
-*/}
+
 
       </main>
+
+      <Footer fraseFooter={fraseFooter} />
 
       <ScrollTopButton />
 

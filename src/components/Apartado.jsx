@@ -20,7 +20,7 @@ export default function Apartado({ titulo, descripcion, cursos }) {
             return (
                 <section>
                     {descripcion.map((item, index) => (
-                        <div key={index} className="formacionItem container">
+                        <div key={index} className="formacionItem container2">
                             <h3 className="formacionTitulo">{item.titulo}</h3>
                             <p><strong>{item.anio}</strong> - {item.centro}</p>
                             <p>💠{item.descripFormacion}</p>

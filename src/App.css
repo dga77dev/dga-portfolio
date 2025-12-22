@@ -285,6 +285,14 @@
     background-color: var(--color-boxes);
   }
 
+ .container2 {
+    border: 2px solid var(--color-bordes);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: var(--color-boxes);
+  }
+
   .container:hover {
     border: 2px solid var(--color-bordes-on);
   }
@@ -380,12 +388,27 @@
   .proyectoEnlace {
     color: var(--color-btn);
     padding: 0.5rem 1rem;
-    }
+  }
 
-    .proyectoEnlace:hover {
+  .proyectoEnlace:hover {
       background-color: var(--color-btn-back);
       color: var(--color-hover)
-    }
+  }
+
+  /* Footer */
+
+.footer{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 2rem 0rem;
+  background-color: var(--color-cabecera);
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+}
+
 }
 
 
