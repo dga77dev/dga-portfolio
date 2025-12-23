@@ -276,6 +276,17 @@ export default function App() {
       video: false,
       pagina: false,
       enlace: false
+    },
+
+    { 
+      id: 4,
+      nombre: "Desguace Redia", 
+      tecs: ["powerapps", "sharepoint", "excel"], 
+      descripcion: "Prácticas no profesionales, donde creamos en 15 días una aplicación en se recopilan los datos de los vehíulos que entran al desguace (toma de datos y fotos y subida a Sharepoint), para que desde la oficina puedan realizar consultas y edición de datos.",
+      imagen: false,
+      video: false,
+      pagina: false,
+      enlace: false
     }
   ];
 

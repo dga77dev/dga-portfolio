@@ -11,7 +11,7 @@ export default function Proyecto({ proyecto }) {
             <div className="contenedorIconos contenedorIconos2">
                 {tecs.map((tec) => (
                     <div className="iconoMini" key={tec}>
-                        <img src={`/images/${tec}.svg`} alt={`logo ${tec}`} />
+                        <img src={`/images/${tec}.svg`} alt={`logo ${tec}`} title={tec} />
                     </div>
                 ))}
             </div>
