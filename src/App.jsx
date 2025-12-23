@@ -14,6 +14,7 @@ import NavBar from './components/NavBar.jsx';
 import ScrollTopButton from './components/ScrollToplButton.jsx';
 import Apartado from './components/Apartado.jsx';
 import ApartadoAcordeones from './components/ApartadoAcordeones.jsx';
+import MiniYo from './components/MiniYo.jsx';
 import Footer from './components/Footer.jsx';
 
 export default function App() {
@@ -310,8 +311,9 @@ export default function App() {
         <Apartado titulo="Formación" descripcion={formacion} cursos={cursos} />
 
         <Apartado titulo="Proyectos" descripcion={proyectos} />
-
-
+{/*
+        <MiniYo/>
+*/}
       </main>
 
       <Footer fraseFooter={fraseFooter} />
