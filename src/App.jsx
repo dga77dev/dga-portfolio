@@ -311,9 +311,15 @@ export default function App() {
         <Apartado titulo="Formación" descripcion={formacion} cursos={cursos} />
 
         <Apartado titulo="Proyectos" descripcion={proyectos} />
+<<<<<<< HEAD
         
         <MiniYo/>
         
+=======
+{/*
+        <MiniYo/>
+*/}
+>>>>>>> 57fa905b0bebbae670932def45c3daa893bda625
       </main>
 
       <Footer fraseFooter={fraseFooter} />
