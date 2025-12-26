@@ -276,7 +276,7 @@ export default function App() {
       imagen: false,
       video: false,
       pagina: false,
-      enlace: false
+      enlace: "https://dga-portfolio.web.app"
     },
 
     { 
@@ -311,9 +311,9 @@ export default function App() {
         <Apartado titulo="Formación" descripcion={formacion} cursos={cursos} />
 
         <Apartado titulo="Proyectos" descripcion={proyectos} />
-{/*
+        
         <MiniYo/>
-*/}
+        
       </main>
 
       <Footer fraseFooter={fraseFooter} />
