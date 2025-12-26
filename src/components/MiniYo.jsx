@@ -56,7 +56,7 @@ export default function Miniyo() {
             }}
         >
             <img
-                src="/images/miniyo.svg"
+                src="/images/miniyo.png"
                 alt="Miniyo"
                 style={{ width: "60px" }}
             />
