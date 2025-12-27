@@ -271,7 +271,7 @@ export default function App() {
     { 
       id: 3,
       nombre: "CV Portfolio", 
-      tecs: ["html", "css", "react"], 
+      tecs: ["html", "css", "react", "google-analytics"], 
       descripcion: "Este portafolio y curriculum web para mostrar mis habilidades y proyectos.",
       imagen: false,
       video: false,

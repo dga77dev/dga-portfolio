@@ -66,7 +66,7 @@ export default function Miniyo() {
                     opacity: showText ? 1 : 0,
                     transition: "opacity 0.4s ease-in-out",
                     whiteSpace: "nowrap",
-                    fontSize: "14px",
+                    fontSize: "0.7rem",
                     background: "rgba(0,0,0,0.7)",
                     color: "#fff",
                     padding: "4px 8px",
